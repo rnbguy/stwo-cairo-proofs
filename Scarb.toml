@@ -1,0 +1,9 @@
+[workspace]
+members = ["packages/ed25519", "packages/sha256"]
+
+[workspace.dependencies]
+cairo_execute = { version = "2.11.4" }
+alexandria_math = { version = "0.5.1" }
+
+[cairo]
+enable-gas = false

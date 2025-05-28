@@ -1,0 +1,13 @@
+[package]
+name = "sha256"
+version = "0.1.0"
+edition = "2024_07"
+
+[dependencies]
+cairo_execute = { workspace = true }
+alexandria_math = { workspace = true }
+
+[executable]
+
+[cairo]
+enable-gas = false
