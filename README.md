@@ -3,6 +3,12 @@
 Install `cairo-prove` binary from
 [starkware-libs/stwo-cairo](https://github.com/starkware-libs/stwo-cairo).
 
+```bash
+git clone https://github.com/starkware-libs/stwo-cairo
+cd stwo-cairo/cairo-prove
+RUSTFLAGS="-C target-cpu=native" cargo install --path .
+```
+
 ## sha256
 
 Test vector from https://www.di-mgt.com.au/sha_testvectors.html:
