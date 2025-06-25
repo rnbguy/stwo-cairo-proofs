@@ -1,9 +1,10 @@
 [workspace]
-members = ["packages/ed25519", "packages/sha256"]
+members = ["packages/ed25519", "packages/sha256", "packages/ed25519_garaga"]
 
 [workspace.dependencies]
 cairo_execute = { version = "2.11.4" }
 alexandria_math = { version = "0.5.1" }
+garaga = { git = "https://github.com/keep-starknet-strange/garaga" }
 
 [cairo]
 enable-gas = false

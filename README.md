@@ -64,3 +64,15 @@ cairo-prove prove target/dev/ed25519.executable.json ed25519_proof.json --argume
 # verify
 cairo-prove verify ed25519_proof.json
 ```
+
+# garaga ed25519
+
+```bash
+# only execute
+scarb execute -p ed25519_garaga --arguments-file packages/ed25519_garaga/artifacts/sample.json
+# stwo prover
+scarb build -p ed25519_garaga
+cairo-prove prove target/dev/ed25519_garaga.executable.json ed25519_garaga_proof.json --arguments-file packages/ed25519_garaga/artifacts/sample.json
+# verify
+cairo-prove verify ed25519_garaga_proof.json
+```

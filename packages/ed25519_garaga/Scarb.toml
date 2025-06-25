@@ -1,0 +1,13 @@
+[package]
+name = "ed25519_garaga"
+version = "0.1.0"
+edition = "2024_07"
+
+[dependencies]
+cairo_execute = { workspace = true }
+garaga = { workspace = true }
+
+[executable]
+
+[cairo]
+enable-gas = false
